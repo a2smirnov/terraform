@@ -1,0 +1,5 @@
+mysql-admin-login    = "testadmin"
+mysql-admin-password = "i_will_not_show_it"
+mysql-version        = "8.0"
+mysql-sku-name       = "B_Gen5_1"
+mysql-storage        = "5120"
