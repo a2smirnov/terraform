@@ -14,10 +14,18 @@ variable "mysql-version" {
 variable "mysql-sku-name" {
   type = string
   description = "MySQL SKU Name"
-  default = "B_Gen5_1"
+  default = "B_Gen4_1"
 }
 variable "mysql-storage" {
   type = string
   description = "MySQL Storage in MB"
   default = "5120"
+}
+variable "mysql-access-from-ip1" {
+  type = string
+  description = "Allowed source IP address"
+}
+variable "mysql-access-from-ip2" {
+  type = string
+  description = "Allowed source IP address"
 }

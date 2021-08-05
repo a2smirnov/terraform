@@ -26,10 +26,18 @@ resource "azurerm_mysql_database" "mysql-db" {
   collation           = "utf8_unicode_ci"
 }
 
-resource "azurerm_mysql_firewall_rule" "mysql-fw-rule" {
+resource "azurerm_mysql_firewall_rule" "mysql-fw-rule1" {
   name                = "MySQL_restricted_Access"
   resource_group_name = azurerm_resource_group.my-project.name
   server_name         = azurerm_mysql_server.mysql-server.name
-  start_ip_address    = "87.249.236.234"
-  end_ip_address      = "87.249.236.234"
+  start_ip_address    = var.mysql-access-from-ip1
+  end_ip_address      = var.mysql-access-from-ip1
+}
+
+resource "azurerm_mysql_firewall_rule" "mysql-fw-rule2" {
+  name                = "MySQL_restricted_Access"
+  resource_group_name = azurerm_resource_group.my-project.name
+  server_name         = azurerm_mysql_server.mysql-server.name
+  start_ip_address    = var.mysql-access-from-ip2
+  end_ip_address      = var.mysql-access-from-ip2
 }

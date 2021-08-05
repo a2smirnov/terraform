@@ -1,5 +1,7 @@
 mysql-admin-login    = "testadmin"
-mysql-admin-password = "i_will_not_show_it"
+mysql-admin-password = "Gfccdjhl0"
 mysql-version        = "8.0"
 mysql-sku-name       = "B_Gen5_1"
 mysql-storage        = "5120"
+mysql-access-from-ip1 = "87.249.236.234"
+mysql-access-from-ip2 = "92.241.229.135"
